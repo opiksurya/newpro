@@ -13,6 +13,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -38,8 +41,8 @@
       <div class="nav-actions">
         <!-- Theme Toggle Switcher -->
         <button id="themeToggleBtn" class="theme-toggle-btn" aria-label="Toggle Light / Dark mode" title="Ganti Tema">
-          <svg class="sun-icon" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58c-.39-.39-1.03-.39-1.41 0s-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41L5.99 4.58zm12.37 12.37c-.39-.39-1.03-.39-1.41 0s-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41l-1.06-1.06zm1.06-10.96c.39-.39.39-1.03 0-1.41s-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06zM7.05 18.36c.39-.39.39-1.03 0-1.41s-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06z"/></svg>
-          <svg class="moon-icon" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12.3 2a10 10 0 0 0-.19 20 10.04 10.04 0 0 0 9.95-8.7 1 1 0 0 0-1.2-1.1 8 8 0 1 1-9.66-9.66 1 1 0 0 0-1.1-1.2A9.94 9.94 0 0 0 12.3 2z"/></svg>
+          <i class="fa-solid fa-sun sun-icon"></i>
+          <i class="fa-solid fa-moon moon-icon"></i>
         </button>
 
         <!-- Language Switcher: NL, EN -->
@@ -82,20 +85,20 @@
 
           <div class="hero-highlights-row">
             <div class="hero-pill-badge">
-              <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-              <span data-nl="⚡ Reactie binnen 24 uur" data-en="⚡ Response within 24 hours" data-id="⚡ Respons dalam 24 jam">⚡ Reactie binnen 24 uur</span>
+              <i class="fa-solid fa-check hero-check-icon"></i>
+              <span data-nl="Reactie binnen 24 uur" data-en="Response within 24 hours" data-id="Respons dalam 24 jam"><i class="fa-solid fa-bolt" style="color: #f59e0b; margin-right: 4px;"></i> Reactie binnen 24 uur</span>
             </div>
             <div class="hero-pill-badge">
-              <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-              <span data-nl="☕ Welkom in Studio Nijmegen" data-en="☕ Welcome to Studio Nijmegen" data-id="☕ Kunjungi Studio Nijmegen">☕ Welkom in Studio Nijmegen</span>
+              <i class="fa-solid fa-check hero-check-icon"></i>
+              <span data-nl="Welkom in Studio Nijmegen" data-en="Welcome to Studio Nijmegen" data-id="Kunjungi Studio Nijmegen"><i class="fa-solid fa-mug-hot" style="color: var(--primary); margin-right: 4px;"></i> Welkom in Studio Nijmegen</span>
             </div>
             <div class="hero-pill-badge">
-              <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-              <span data-nl="📅 Direct videocall inplannen" data-en="📅 Instant video call booking" data-id="📅 Jadwalkan video call instan">📅 Direct videocall inplannen</span>
+              <i class="fa-solid fa-check hero-check-icon"></i>
+              <span data-nl="Direct videocall inplannen" data-en="Instant video call booking" data-id="Jadwalkan video call instan"><i class="fa-solid fa-calendar-days" style="color: var(--primary); margin-right: 4px;"></i> Direct videocall inplannen</span>
             </div>
             <div class="hero-pill-badge">
-              <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-              <span data-nl="🛡️ 100% AVG / GDPR Compliant" data-en="🛡️ 100% GDPR Compliant" data-id="🛡️ Kepatuhan GDPR 100%">🛡️ 100% AVG / GDPR Compliant</span>
+              <i class="fa-solid fa-check hero-check-icon"></i>
+              <span data-nl="100% AVG / GDPR Compliant" data-en="100% GDPR Compliant" data-id="Kepatuhan GDPR 100%"><i class="fa-solid fa-shield-halved" style="color: #10b981; margin-right: 4px;"></i> 100% AVG / GDPR Compliant</span>
             </div>
           </div>
         </div>
@@ -128,7 +131,7 @@
               <!-- Phone -->
               <a href="tel:+310615878547" class="channel-card">
                 <div class="channel-card-left">
-                  <div class="channel-icon">📞</div>
+                  <div class="channel-icon"><i class="fa-solid fa-phone"></i></div>
                   <div class="channel-info">
                     <h4 data-nl="Bellen naar de studio" data-en="Call the studio" data-id="Hubungi via telepon">Bellen naar de studio</h4>
                     <p>(+31) 06-15878547 &bull; <span style="font-size: 0.8rem; color: var(--text-dim);" data-nl="Ma-Vr 08:30 - 18:00" data-en="Mon-Fri 08:30 - 18:00" data-id="Sen-Jum 08:30 - 18:00">Ma-Vr 08:30 - 18:00</span></p>
@@ -136,14 +139,14 @@
                 </div>
                 <div class="channel-action">
                   <span data-nl="Bellen" data-en="Call Now" data-id="Telepon">Bellen</span>
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                  <i class="fa-solid fa-arrow-right"></i>
                 </div>
               </a>
 
               <!-- WhatsApp -->
               <a href="https://wa.me/31615878547?text=Hallo%20NewPro,%20ik%20heb%20een%20vraag%20over%20content%20abonnementen%20en%20studio%20opnames." target="_blank" rel="noopener noreferrer" class="channel-card">
                 <div class="channel-card-left">
-                  <div class="channel-icon" style="background: rgba(37, 211, 102, 0.12); color: #25D366;">💬</div>
+                  <div class="channel-icon" style="background: rgba(37, 211, 102, 0.12); color: #25D366;"><i class="fa-brands fa-whatsapp"></i></div>
                   <div class="channel-info">
                     <h4 data-nl="WhatsApp Zakelijk" data-en="WhatsApp Business" data-id="WhatsApp Bisnis">WhatsApp Zakelijk</h4>
                     <p data-nl="Snelle vragen &amp; korte afstemming" data-en="Quick inquiries &amp; chat" data-id="Pertanyaan cepat &amp; konsultasi singkat">Snelle vragen &amp; korte afstemming</p>
@@ -151,14 +154,14 @@
                 </div>
                 <div class="channel-action" style="color: #25D366;">
                   <span data-nl="Chatten" data-en="Chat Now" data-id="Kirim Pesan">Chatten</span>
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                  <i class="fa-solid fa-arrow-right"></i>
                 </div>
               </a>
 
               <!-- Email -->
               <a href="mailto:info@newpro.nl" class="channel-card">
                 <div class="channel-card-left">
-                  <div class="channel-icon">✉️</div>
+                  <div class="channel-icon"><i class="fa-solid fa-envelope"></i></div>
                   <div class="channel-info">
                     <h4 data-nl="E-mail ons team" data-en="Email our team" data-id="Kirimkan email">E-mail ons team</h4>
                     <p>info@newpro.nl &bull; <span style="font-size: 0.8rem; color: var(--text-dim);" data-nl="Reactie binnen 24u" data-en="Reply in 24h" data-id="Balasan dalam 24 jam">Reactie binnen 24u</span></p>
@@ -166,14 +169,14 @@
                 </div>
                 <div class="channel-action">
                   <span data-nl="Mailen" data-en="Send Mail" data-id="Kirim Email">Mailen</span>
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                  <i class="fa-solid fa-arrow-right"></i>
                 </div>
               </a>
 
               <!-- Studio Location -->
               <div class="channel-card" style="cursor: default;">
                 <div class="channel-card-left">
-                  <div class="channel-icon">📍</div>
+                  <div class="channel-icon"><i class="fa-solid fa-location-dot"></i></div>
                   <div class="channel-info">
                     <h4 data-nl="Studio &amp; Hoofdkantoor" data-en="Studio &amp; Headquarters" data-id="Studio &amp; Kantor Pusat">Studio &amp; Hoofdkantoor</h4>
                     <p>Nijmegen, Gelderland &bull; Nederland</p>
@@ -181,7 +184,7 @@
                 </div>
                 <a href="#locatie-kaart" class="channel-action" style="text-decoration: underline;">
                   <span data-nl="Bekijk Kaart" data-en="View Map" data-id="Lihat Peta">Bekijk Kaart</span>
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M19 9l-7 7-7-7"/></svg>
+                  <i class="fa-solid fa-arrow-down"></i>
                 </a>
               </div>
 
@@ -204,15 +207,15 @@
 
                 <div class="studio-specs-list">
                   <div class="studio-spec-item">
-                    <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                    <i class="fa-solid fa-circle-check" style="color: #10b981; margin-right: 8px;"></i>
                     <span data-nl="2x Volledig akoestisch geïsoleerde studio sets (4K Sony FX6/FX3 multicam)" data-en="2x Fully soundproofed broadcast sets (4K Sony FX6/FX3 multicam)" data-id="2 set studio kedap suara broadcast (multicam 4K Sony FX6/FX3)">2x Volledig akoestisch geïsoleerde studio sets (4K Sony FX6/FX3 multicam)</span>
                   </div>
                   <div class="studio-spec-item">
-                    <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                    <i class="fa-solid fa-circle-check" style="color: #10b981; margin-right: 8px;"></i>
                     <span data-nl="Shure SM7B broadcast microfoons &amp; teleprompters voor ontspannen presentaties" data-en="Shure SM7B broadcast audio &amp; teleprompter suite for natural delivery" data-id="Mikrofon broadcast Shure SM7B &amp; teleprompter untuk penyampaian yang rileks">Shure SM7B broadcast microfoons &amp; teleprompters voor ontspannen presentaties</span>
                   </div>
                   <div class="studio-spec-item">
-                    <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                    <i class="fa-solid fa-circle-check" style="color: #10b981; margin-right: 8px;"></i>
                     <span data-nl="Comfortabele lounge met verse espresso &amp; gratis privéparking voor gasten" data-en="Lounge with freshly brewed espresso &amp; free private parking on premises" data-id="Lounge nyaman dengan kopi espresso segar &amp; parkir pribadi gratis">Comfortabele lounge met verse espresso &amp; gratis privéparking voor gasten</span>
                   </div>
                 </div>
@@ -492,7 +495,7 @@
           <div class="faq-item">
             <div class="faq-question">
               <span data-nl="Hoe snel kunnen we starten na onze eerste kennismaking?" data-en="How quickly can we start after our initial call?" data-id="Seberapa cepat kita dapat memulai setelah perkenalan?">Hoe snel kunnen we starten na onze eerste kennismaking?</span>
-              <span class="faq-icon">+</span>
+              <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
             </div>
             <div class="faq-answer">
               <p data-nl="Meestal kunnen we binnen 5 tot 7 werkdagen de kick-off strategie inplannen en de eerste studio-opnamedag vastleggen. We houden continu studio-capaciteit gereserveerd voor nieuwe B2B partners." data-en="Typically, we can host the kickoff strategy session and schedule your first studio production shoot within 5 to 7 business days." data-id="Biasanya kami dapat menjadwalkan sesi strategi awal dan menetapkan hari rekaman studio pertama dalam 5 hingga 7 hari kerja.">
@@ -504,7 +507,7 @@
           <div class="faq-item">
             <div class="faq-question">
               <span data-nl="Kunnen we de studio in Nijmegen vrijblijvend bezichtigen?" data-en="Can we visit the Nijmegen studio without commitment?" data-id="Dapatkah kami mengunjungi studio di Nijmegen tanpa komitmen?">Kunnen we de studio in Nijmegen vrijblijvend bezichtigen?</span>
-              <span class="faq-icon">+</span>
+              <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
             </div>
             <div class="faq-answer">
               <p data-nl="Jazeker! We nodigen u van harte uit voor een kop koffie in onze studio. Zo kunt u de akoestische sets, belichting, camera's en de ontspannen werksfeer zelf ervaren vóórdat u beslist." data-en="Absolutely! We warmly welcome you for a tour and coffee at our Nijmegen studio so you can inspect our sets, cameras, and lounge in person." data-id="Tentu saja! Kami dengan senang hati menyambut Anda untuk tur studio dan menikmati kopi di Nijmegen sebelum Anda memutuskan.">
@@ -516,7 +519,7 @@
           <div class="faq-item">
             <div class="faq-question">
               <span data-nl="Moeten we zelf al scripts of concrete ideeën hebben voorbereid?" data-en="Do we need to prepare scripts or concepts beforehand?" data-id="Apakah kami harus menyiapkan naskah atau ide sebelum pertemuan?">Moeten we zelf al scripts of concrete ideeën hebben voorbereid?</span>
-              <span class="faq-icon">+</span>
+              <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
             </div>
             <div class="faq-answer">
               <p data-nl="Nee, dat is absoluut niet nodig. Tijdens de kennismaking luisteren we naar uw zakelijke doelen en doelgroep. Ons redactionele team (onder leiding van Marijke) zorgt vervolgens voor formats, hooks en kant-en-klare scripts." data-en="No preparation is required. In the discovery call, we focus on your business goals and buyer personas. Our editorial team writes all scripts and formats." data-id="Sama sekali tidak perlu. Tim kami akan menggali target audiens dan tujuan bisnis Anda, lalu menyusun seluruh konsep dan naskah.">
@@ -528,7 +531,7 @@
           <div class="faq-item">
             <div class="faq-question">
               <span data-nl="Werkt NewPro ook voor organisaties buiten Nederland?" data-en="Does NewPro work with international organizations outside the Netherlands?" data-id="Apakah NewPro melayani klien di luar Belanda?">Werkt NewPro ook voor organisaties buiten Nederland?</span>
-              <span class="faq-icon">+</span>
+              <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
             </div>
             <div class="faq-answer">
               <p data-nl="Ja! Onze studio ligt centraal in Europa (vlakbij Arnhem/Nijmegen, goed bereikbaar vanaf Schiphol en Düsseldorf). Wij produceren regelmatig meertalige video's in het Engels en Duits voor internationale SaaS- en B2B enterprises." data-en="Yes! Located conveniently between Amsterdam and the German border, we regularly serve cross-border B2B enterprises with English and German language productions." data-id="Ya! Berlokasi strategis di Eropa, kami rutin memproduksi video multibahasa (Inggris dan Jerman) untuk klien enterprise internasional.">
@@ -560,22 +563,22 @@
             </p>
 
             <div style="display: flex; flex-direction: column; gap: 14px; margin-bottom: 28px;">
-              <div style="display: flex; align-items: center; gap: 12px; font-size: 0.9rem; color: var(--text-main);">
-                <span style="font-size: 1.2rem;">🚗</span>
+              <div style="display: flex; align-items: center; gap: 14px; font-size: 0.9rem; color: var(--text-main);">
+                <span style="font-size: 1.15rem; color: var(--primary); width: 22px; text-align: center;"><i class="fa-solid fa-car"></i></span>
                 <span><strong>Met de auto:</strong> 5 minuten vanaf afrit A73 / A50 &bull; Gratis eigen parkeerterrein</span>
               </div>
-              <div style="display: flex; align-items: center; gap: 12px; font-size: 0.9rem; color: var(--text-main);">
-                <span style="font-size: 1.2rem;">🚆</span>
+              <div style="display: flex; align-items: center; gap: 14px; font-size: 0.9rem; color: var(--text-main);">
+                <span style="font-size: 1.15rem; color: var(--primary); width: 22px; text-align: center;"><i class="fa-solid fa-train"></i></span>
                 <span><strong>Openbaar vervoer:</strong> Directe bus- en sneltreinverbinding vanaf Nijmegen Centraal</span>
               </div>
-              <div style="display: flex; align-items: center; gap: 12px; font-size: 0.9rem; color: var(--text-main);">
-                <span style="font-size: 1.2rem;">✈️</span>
+              <div style="display: flex; align-items: center; gap: 14px; font-size: 0.9rem; color: var(--text-main);">
+                <span style="font-size: 1.15rem; color: var(--primary); width: 22px; text-align: center;"><i class="fa-solid fa-plane"></i></span>
                 <span><strong>Vliegvelden:</strong> 65 min vanaf Amsterdam Schiphol, 55 min vanaf Weeze / Düsseldorf</span>
               </div>
             </div>
 
-            <a href="https://maps.google.com/?q=Nijmegen,Netherlands" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" data-nl="Open in Google Maps ↗" data-en="Open in Google Maps ↗" data-id="Buka di Google Maps ↗">
-              Open in Google Maps ↗
+            <a href="https://maps.google.com/?q=Nijmegen,Netherlands" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" data-nl="Open in Google Maps" data-en="Open in Google Maps" data-id="Buka di Google Maps">
+              Open in Google Maps <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.85rem; margin-left: 6px;"></i>
             </a>
           </div>
 
