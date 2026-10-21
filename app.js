@@ -1,11 +1,16 @@
 // European Content Agency - NewPro Model Interactive Behaviors
 
 document.addEventListener('DOMContentLoaded', () => {
-  // 1. Language Toggle (NL / EN / ID)
+  // 1. Language Toggle (NL / EN)
   const langButtons = document.querySelectorAll('.lang-btn');
   let currentLang = localStorage.getItem('newpro-lang') || 'nl';
+  if (currentLang === 'id') {
+    currentLang = 'nl';
+    localStorage.setItem('newpro-lang', 'nl');
+  }
 
   function updateLanguage(lang) {
+    if (lang !== 'nl' && lang !== 'en') lang = 'nl';
     currentLang = lang;
     localStorage.setItem('newpro-lang', lang);
 
@@ -13,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
       btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
     });
 
-    const translatableElements = document.querySelectorAll('[data-nl], [data-en], [data-id]');
+    const translatableElements = document.querySelectorAll('[data-nl], [data-en]');
     translatableElements.forEach(el => {
       const text = el.getAttribute(`data-${lang}`);
       if (text) {
