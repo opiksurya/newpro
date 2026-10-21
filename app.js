@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
       talent_role_nl: 'Vaste Presentator B2B & Finance',
       talent_role_en: 'Dedicated B2B Presenter',
       talent_role_id: 'Presenter Tetap B2B & Regulasi',
-      metrics: '📈 +142% Inbound Demo Leads • 94K Views di LinkedIn',
+      metrics: '<i class="fa-solid fa-arrow-trend-up"></i> +142% Inbound Demo Leads • 94K Views di LinkedIn',
       video_url: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4',
       poster: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1200&q=80',
       synopsis_nl: '"Een complexe EU-richtlijn vertaald naar 75 seconden heldere thought leadership. Evoworks ontving binnen 4 weken meer dan 30 gekwalificeerde enterprise-aanvragen."',
@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
       talent_role_nl: 'SaaS & Tech Host (Meertalig NL/FR/EN)',
       talent_role_en: 'Multilingual SaaS Product Host',
       talent_role_id: 'Host Produk & Demo SaaS Multibahasa',
-      metrics: '🎯 4.8x Conversion Rate pada Signup Demo',
+      metrics: '<i class="fa-solid fa-bullseye"></i> 4.8x Conversion Rate pada Signup Demo',
       video_url: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4',
       poster: 'https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1200&q=80',
       synopsis_nl: '"Sophie presenteert de kernfuncties van de cloudsoftware zonder jargon. De bounce rate daalde met 42% en het aantal demo-aanvragen verviervoudigde."',
@@ -121,7 +121,7 @@ document.addEventListener('DOMContentLoaded', () => {
       talent_role_nl: 'Podcast Host & Executive Interviewer',
       talent_role_en: 'Podcast Host & Executive Interviewer',
       talent_role_id: 'Host Podcast & Pewawancara C-Level',
-      metrics: '🎙️ 18.500+ Pendengar Aktif Spotify & YouTube • Top 5',
+      metrics: '<i class="fa-solid fa-microphone-lines"></i> 18.500+ Pendengar Aktif Spotify & YouTube • Top 5',
       video_url: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyBlazes.mp4',
       poster: 'https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&w=1200&q=80',
       synopsis_nl: '"Een diepgaand studio-interview met industrie-experts. Maakte van Sociuu dé autoriteit op het gebied van duurzame toeleveringsketens in Noord-Europa."',
@@ -137,7 +137,7 @@ document.addEventListener('DOMContentLoaded', () => {
       talent_role_nl: 'Presentatrice MedTech & Storyteller',
       talent_role_en: 'Healthcare & ESG Storyteller',
       talent_role_id: 'Presenter Edukasi Klinis & Storyteller',
-      metrics: '🛡️ 98% Stakeholder Trust & Client Engagement',
+      metrics: '<i class="fa-solid fa-shield-halved"></i> 98% Stakeholder Trust & Client Engagement',
       video_url: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4',
       poster: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1200&q=80',
       synopsis_nl: '"Emma brengt complexe klinische certificeringen menselijk in beeld, waardoor institutionele investeerders direct vertrouwen kregen in de propositie."',
@@ -153,7 +153,7 @@ document.addEventListener('DOMContentLoaded', () => {
       talent_role_nl: 'FinTech & AI Explainer',
       talent_role_en: 'FinTech & AI Explainer',
       talent_role_id: 'Presenter FinTech & Sistem Pembayaran',
-      metrics: '👁️ 112K Views Organik & 320 Share LinkedIn',
+      metrics: '<i class="fa-solid fa-eye"></i> 112K Views Organik & 320 Share LinkedIn',
       video_url: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4',
       poster: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80',
       synopsis_nl: '"Korte, scherpe video die in 48 seconden de verborgen wisselkoerskosten blootlegt. Resulteerde in een virale LinkedIn post met duizenden B2B interacties."',
@@ -169,7 +169,7 @@ document.addEventListener('DOMContentLoaded', () => {
       talent_role_nl: 'Brand Storyteller & Host',
       talent_role_en: 'Brand Storyteller & Host',
       talent_role_id: 'Brand Storyteller & Presenter Narasi',
-      metrics: '⭐ 3.6x Brand Recall & Rekrutmen Talenta Top',
+      metrics: '<i class="fa-solid fa-star"></i> 3.6x Brand Recall & Rekrutmen Talenta Top',
       video_url: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4',
       poster: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80',
       synopsis_nl: '"Een authentiek kijkje achter de schermen dat potentiële enterprise-klanten en nieuw toptalent overtuigt van de bedrijfscultuur."',
@@ -240,7 +240,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (modalCaseTitle) modalCaseTitle.textContent = c[`title_${currentLang}`] || c.title_nl;
       if (modalTalentName) modalTalentName.textContent = c.talent_name;
       if (modalTalentRole) modalTalentRole.textContent = c[`talent_role_${currentLang}`] || c.talent_role_nl;
-      if (modalCaseMetrics) modalCaseMetrics.textContent = c.metrics;
+      if (modalCaseMetrics) modalCaseMetrics.innerHTML = c.metrics;
       if (modalScriptExcerpt) modalScriptExcerpt.textContent = c[`synopsis_${currentLang}`] || c.synopsis_nl;
 
       if (modalVideoPlayer) {
@@ -265,7 +265,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (modalCaseTitle) modalCaseTitle.textContent = info.name;
       if (modalTalentName) modalTalentName.textContent = info.name;
       if (modalTalentRole) modalTalentRole.textContent = info[`role_${currentLang}`] || info.role_nl;
-      if (modalCaseMetrics) modalCaseMetrics.textContent = '🎙️ 48kHz Broadcast Master Audio';
+      if (modalCaseMetrics) modalCaseMetrics.innerHTML = '<i class="fa-solid fa-microphone-lines"></i> 48kHz Broadcast Master Audio';
       if (modalScriptExcerpt) modalScriptExcerpt.textContent = info[`script_${currentLang}`] || info.script_nl;
 
       if (modalVideoPlayer) {
@@ -326,9 +326,9 @@ document.addEventListener('DOMContentLoaded', () => {
       tag_nl: 'HOOFDARTIKEL • VIDEOSTRATEGIE',
       tag_en: 'FEATURED • VIDEO STRATEGY',
       tag_id: 'ARTIKEL UTAMA • STRATEGI VIDEO',
-      meta_nl: '⏱️ 5 min leestijd • B2B Thought Leadership • Studio Nijmegen',
-      meta_en: '⏱️ 5 min read • B2B Thought Leadership • Studio Nijmegen',
-      meta_id: '⏱️ 5 menit baca • Kepemimpinan B2B • Studio Nijmegen',
+      meta_nl: '<i class="fa-regular fa-clock"></i> 5 min leestijd • B2B Thought Leadership • Studio Nijmegen',
+      meta_en: '<i class="fa-regular fa-clock"></i> 5 min read • B2B Thought Leadership • Studio Nijmegen',
+      meta_id: '<i class="fa-regular fa-clock"></i> 5 menit baca • Kepemimpinan B2B • Studio Nijmegen',
       img: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1200&q=80',
       author_name: 'Marijke Jansen',
       author_role_nl: 'Lead Scriptwriter & B2B Content Strategist',
@@ -371,9 +371,9 @@ document.addEventListener('DOMContentLoaded', () => {
       tag_nl: 'MERKIDENTITEIT',
       tag_en: 'BRAND IDENTITY',
       tag_id: 'IDENTITAS BRAND',
-      meta_nl: '⏱️ 4 min leestijd • Talent & Casting',
-      meta_en: '⏱️ 4 min read • Talent & Casting',
-      meta_id: '⏱️ 4 menit baca • Talent & Casting',
+      meta_nl: '<i class="fa-regular fa-clock"></i> 4 min leestijd • Talent & Casting',
+      meta_en: '<i class="fa-regular fa-clock"></i> 4 min read • Talent & Casting',
+      meta_id: '<i class="fa-regular fa-clock"></i> 4 menit baca • Talent & Casting',
       img: 'https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80',
       author_name: 'Lydia Brouwer',
       author_role_nl: 'Head of Talent & Casting Director',
@@ -404,9 +404,9 @@ document.addEventListener('DOMContentLoaded', () => {
       tag_nl: 'STUDIO PODCAST',
       tag_en: 'STUDIO PODCAST',
       tag_id: 'PODCAST STUDIO',
-      meta_nl: '⏱️ 6 min leestijd • Zakelijke Audio',
-      meta_en: '⏱️ 6 min read • Corporate Audio',
-      meta_id: '⏱️ 6 menit baca • Audio Bisnis',
+      meta_nl: '<i class="fa-regular fa-clock"></i> 6 min leestijd • Zakelijke Audio',
+      meta_en: '<i class="fa-regular fa-clock"></i> 6 min read • Corporate Audio',
+      meta_id: '<i class="fa-regular fa-clock"></i> 6 menit baca • Audio Bisnis',
       img: 'https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&w=800&q=80',
       author_name: 'Pepijn van Dijk',
       author_role_nl: 'Oprichter & Creative Director',
@@ -433,9 +433,9 @@ document.addEventListener('DOMContentLoaded', () => {
       tag_nl: 'DIRECTIE COACHING',
       tag_en: 'EXECUTIVE COACHING',
       tag_id: 'PELATIHAN EKSEKUTIF',
-      meta_nl: '⏱️ 5 min leestijd • Studio Coaching',
-      meta_en: '⏱️ 5 min read • Studio Coaching',
-      meta_id: '⏱️ 5 menit baca • Pelatihan Kamera',
+      meta_nl: '<i class="fa-regular fa-clock"></i> 5 min leestijd • Studio Coaching',
+      meta_en: '<i class="fa-regular fa-clock"></i> 5 min read • Studio Coaching',
+      meta_id: '<i class="fa-regular fa-clock"></i> 5 menit baca • Pelatihan Kamera',
       img: 'assets/studio.jpg',
       author_name: 'Chris Meijer',
       author_role_nl: 'Studio Director Nijmegen',
@@ -460,9 +460,9 @@ document.addEventListener('DOMContentLoaded', () => {
       tag_nl: 'LINKEDIN & DISTRIBUTIE',
       tag_en: 'LINKEDIN PLAYBOOK',
       tag_id: 'STRATEGI LINKEDIN',
-      meta_nl: '⏱️ 4 min leestijd • Social Video ROI',
-      meta_en: '⏱️ 4 min read • Social Video ROI',
-      meta_id: '⏱️ 4 menit baca • ROI Video Media Sosial',
+      meta_nl: '<i class="fa-regular fa-clock"></i> 4 min leestijd • Social Video ROI',
+      meta_en: '<i class="fa-regular fa-clock"></i> 4 min read • Social Video ROI',
+      meta_id: '<i class="fa-regular fa-clock"></i> 4 menit baca • ROI Video Media Sosial',
       img: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80',
       author_name: 'Marijke Jansen',
       author_role_nl: 'Lead Scriptwriter',
@@ -487,9 +487,9 @@ document.addEventListener('DOMContentLoaded', () => {
       tag_nl: 'PRODUCTIE & ROI',
       tag_en: 'PRODUCTION & ROI',
       tag_id: 'PRODUKSI & EFISIENSI',
-      meta_nl: '⏱️ 5 min leestijd • Proces Optimalisatie',
-      meta_en: '⏱️ 5 min read • Process Efficiency',
-      meta_id: '⏱️ 5 menit baca • Efisiensi Proses',
+      meta_nl: '<i class="fa-regular fa-clock"></i> 5 min leestijd • Proces Optimalisatie',
+      meta_en: '<i class="fa-regular fa-clock"></i> 5 min read • Process Efficiency',
+      meta_id: '<i class="fa-regular fa-clock"></i> 5 menit baca • Efisiensi Proses',
       img: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80',
       author_name: 'Raoul Verhoeven',
       author_role_nl: 'Head of Post-Production & Motion',
@@ -514,9 +514,9 @@ document.addEventListener('DOMContentLoaded', () => {
       tag_nl: 'EUROPESE EXPANSIE',
       tag_en: 'EUROPEAN EXPANSION',
       tag_id: 'EKSPANSI PASAR EROPA',
-      meta_nl: '⏱️ 7 min leestijd • Internationale B2B',
-      meta_en: '⏱️ 7 min read • Cross-Border B2B',
-      meta_id: '⏱️ 7 menit baca • B2B Lintas Negara',
+      meta_nl: '<i class="fa-regular fa-clock"></i> 7 min leestijd • Internationale B2B',
+      meta_en: '<i class="fa-regular fa-clock"></i> 7 min read • Cross-Border B2B',
+      meta_id: '<i class="fa-regular fa-clock"></i> 7 menit baca • B2B Lintas Negara',
       img: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80',
       author_name: 'Pepijn van Dijk',
       author_role_nl: 'Oprichter & Creative Director',
@@ -556,7 +556,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       if (articleModalImg) articleModalImg.src = a.img;
       if (articleModalTag) articleModalTag.textContent = a[`tag_${currentLang}`] || a.tag_nl;
-      if (articleModalMeta) articleModalMeta.textContent = a[`meta_${currentLang}`] || a.meta_nl;
+      if (articleModalMeta) articleModalMeta.innerHTML = a[`meta_${currentLang}`] || a.meta_nl;
       if (articleModalTitle) articleModalTitle.textContent = a[`title_${currentLang}`] || a.title_nl;
       if (articleModalAuthorAvatar) articleModalAuthorAvatar.src = a.author_avatar;
       if (articleModalAuthorName) articleModalAuthorName.textContent = a.author_name;
